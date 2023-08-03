@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Забери котика себе</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<form action="/handler.php" method="post">
+    <h1>Найди своего идиального котика</h1>
+    <label for="breedName">Название пароды</label>
+    <input type="text" id="breedName" name="breedName"/>
+    <p><input type="checkbox" name="cat" value="rad1">Котик<Br>
+        <input type="checkbox" name="cat" value="rad2">Кошечка<Br>
+        <input type="checkbox" name="cat" value="rad3">Катенок</p>
+    <p>Насколько сильна Ваша любовь к котикам</p>
+    <p><input type="range"></p>
+    <p><select size="3" multiple name="lengthWool">
+        <option disabled>Выберете длинну шерсти</option>
+        <option value="Короткошёрстный">Короткошёрстный</option>
+        <option value="Длинношёрстный">Длинношёрстный</option>
+        <option value="Полудлинношёрстный">Полудлинношёрстный</option>
+        <option value="Бесшёрстный">Бесшёрстный</option>
+    </select></p>
+    <h5>Выберете длинну шерсти</h5>
+    <p><select name="lengthWool">
+        <option disabled>Выберете длинну шерсти</option>
+        <option value="Короткошёрстный">Короткошёрстный</option>
+        <option value="Длинношёрстный">Длинношёрстный</option>
+        <option value="Полудлинношёрстный">Полудлинношёрстный</option>
+        <option value="Бесшёрстный">Бесшёрстный</option>
+    </select></p>
+    <p><b>Дополнительные пожелания:</b></p>
+    <p><textarea name="comment"></textarea></p>
+    <h3>Комплектация котика:</h3>
+    <p><input type="radio" name="a" value="Полная"> Полная (все лапы, хвост и уши присутствуют))</p>
+    <p><input type="radio" name="a" value="Неполная" checked> Неполная (котик с травмами)</p>
+    <p><input type="radio" name="a" value="Неважно" checked> Не имеет значения, буду любить любого котика</p>
+    <button type="submit">Найти котика</button>
+</form>
+</body>
+</html>
